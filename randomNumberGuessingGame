@@ -1,0 +1,60 @@
+/*
+ * 20190429
+ * Challenge number guessing game.
+ * Choose a random number from 1 to 100. The user attempts to determine the number.
+ * - High/low indicator
+ * - Variable to store attempts 
+ * TODO: 
+ * - larger random number
+ * - then add a getting warmer or colder if they're too far away. 
+ * - example if they're 10-25 away you're hot if they're +100 they're 'colder' 
+ */
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class GuessingGame {
+		
+	public static void main(String[] args) {
+	
+		Random rand = new Random();
+		Scanner in = new Scanner(System.in);
+		
+		boolean playing = true; // variable to control game.
+		int i = 1; // variable to store the attempts.
+		int answer = rand.nextInt(100) + 1; // Random number from 1 to 100.
+
+		while (playing == true) 
+			// while loop to control the game.
+			{ 
+			System.out.println("Guess a number from 1 to 100.");
+			int guess = in.nextInt(); // accepts user input.
+		
+			if(guess == answer) 
+				{
+				System.out.println("\nCongratulations! You have guessed the answer! " + answer); 
+				System.out.println("it took you only " + i + " tries.");
+				playing = false; // 
+				}
+			else if(guess == 264496) // way to exit the loop.
+				{
+				System.out.println("Exit code accepted."); 
+				playing = false;
+				}
+			else if(guess > answer) 
+				{
+				System.out.println("Your guess, " + guess + " was too high.\n"); 
+				++i;
+				}
+			else if(guess < answer) 
+				{
+				System.out.println("Your guess, " + guess + " was too low.\n"); 
+				++i;
+				}
+			}
+
+	in.close(); // required to close the input. 
+	System.out.println("\nSession terminated.");
+	
+	}
+}
