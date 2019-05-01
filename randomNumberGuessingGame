@@ -34,9 +34,9 @@ public class GuessingGame {
 				{
 				System.out.println("\nCongratulations! You have guessed the answer! " + answer); 
 				System.out.println("it took you only " + i + " tries.");
-				playing = false; // 
+				playing = false;  
 				}
-			else if(guess == 264496) // way to exit the loop.
+			else if(guess == 264496) // A way to exit the loop.
 				{
 				System.out.println("Exit code accepted."); 
 				playing = false;
