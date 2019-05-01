@@ -19,8 +19,8 @@ public class changeMaker {
 		
 		// converts the difference into a more accurate integer value. 
 		double difference = (totalPaid * 100 - totalDue * 100);
-		Double doubleDifference = difference; // having to do this is outright dumb. 
-		int intDifference = doubleDifference.intValue(); // now i have an integer value of the difference. This is why Python is superior. 
+		Double doubleDifference = difference; // necessary to change the double difference to int intDifference
+		int intDifference = doubleDifference.intValue(); // now i have an integer value of the difference.  
 
 		// start the conversion process counting up to the correct change amount. 
 		while(intDifference > 0) {
@@ -62,13 +62,14 @@ public class changeMaker {
 		}
 		if(quarters > 0) {
 			if(quarters == 1) {
-				System.out.println(quarters + " dollar");
+				System.out.println(quarters + " quarter");
 			} else {
 				System.out.println(quarters + " quarters");
 			}
 		}
 		if(dimes > 0) {
-			if(dimes == 1) {System.out.println(dimes + " dime");
+			if(dimes == 1) {
+				System.out.println(dimes + " dime");
 			} else {
 				System.out.println(dimes + " dimes");
 			}	
@@ -81,7 +82,8 @@ public class changeMaker {
 			}	
 		}
 		if(pennies> 0) {
-			if(pennies == 1) {System.out.println(pennies + " penny");
+			if(pennies == 1) {
+				System.out.println(pennies + " penny");
 			} else {
 				System.out.println(pennies + " pennies");
 			}
