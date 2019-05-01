@@ -25,13 +25,13 @@ public class leibnizPiConvergence {
 			} else {
 				sumLeibniz = sumLeibniz + (1 / denominator);
 				denominator += 2;
-				}
 			}
+		}
 		
 		double piLeibniz = sumLeibniz * 4; 
 		System.out.println("Leibniz's Pi Convergence to " + iterations + " places is:\n" + piLeibniz);
 		System.out.println("Pi is approximately:\n" + pi); 
 		
-		}
 	}
+}
 	
