@@ -1,7 +1,7 @@
 /*
  * 20190501
  * Coding challenge - echo.
- * just a very baisc echo script.
+ * just a very basic echo script.
  */
 
 import java.util.Scanner;
