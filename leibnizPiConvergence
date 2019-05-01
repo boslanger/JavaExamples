@@ -17,7 +17,6 @@ public class leibnizPiConvergence {
 		double sumLeibniz = 1.0; // double precision to 15 to 16 decimal places.
 		double denominator = 3.0;
 		
-		
 		for (int i = 2; i < iterations+2; i++) 
 			{
 			if (i % 2 == 0) {
@@ -35,3 +34,4 @@ public class leibnizPiConvergence {
 		
 		}
 	}
+	
