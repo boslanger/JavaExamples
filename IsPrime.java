@@ -3,7 +3,7 @@
  * Coding challenge - Is the number prime?
  *  TODO: 
  *  - add a input error statement block.
- * 
+ *  - verify that the loop stops when i > userRequest.
  */
 
 import java.util.Scanner;
