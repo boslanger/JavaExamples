@@ -33,6 +33,7 @@ public class isPrime {
 			}
 			if(prime) {
 				System.out.println(userRequest + " is prime.");
+				break;
 			}	
 		}
 
