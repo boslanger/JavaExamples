@@ -40,8 +40,6 @@ public class isPrime {
 		long endTime = Instant.now().toEpochMilli(); // stop timing
 		long timeElapsed = endTime - startTime; 
 		in.close(); // closes the scanner.
-		
-		System.out.println(timeElapsed + " milliseconds"); // displays the speed of execution. 
-		System.out.println("terminated.");
+		System.out.println("\nTerminated in " + timeElapsed + " milliseconds.");
 	}
 }
