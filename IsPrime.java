@@ -6,7 +6,7 @@
  */
 
 import java.time.Instant;
-// import java.util.Scanner;
+import java.util.Scanner;
 
 
 /* takes a user supplied integer and determines all divisors and if it is prime.
@@ -18,7 +18,7 @@ public class isPrime {
 	
 	public static void main(String[] args) {
 		long startTime = Instant.now().toEpochMilli(); // start timing
-//		Scanner in = new Scanner(System.in);
+		Scanner in = new Scanner(System.in);
 		 
 		System.out.println("Check to see if a number is prime.");
 //		int userRequest = in.nextInt();	
